@@ -1,0 +1,303 @@
+/*
+Bootstrap Variables
+*/
+/*
+Code
+*/
+.o-topbar1 {
+  background-image: url(http://modern.realhomes.io/wp-content/uploads/2017/10/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: cover;
+  left: 0;
+  padding: 24px 0 220px;
+  top: 0;
+  width: 100%;
+  z-index: 99; }
+  .o-topbar1 .container {
+    position: relative; }
+  @media (min-width: 768px) {
+    .o-topbar1 {
+      position: relative; } }
+  .o-topbar1__brand img {
+    height: 30px;
+    margin-left: 24px;
+    width: auto; }
+    @media screen and (min-width: 480px) {
+      .o-topbar1__brand img {
+        height: 45px; } }
+    @media (min-width: 768px) {
+      .o-topbar1__brand img {
+        height: auto;
+        margin-left: 0; } }
+  .o-topbar1__nav {
+    font-size: 1rem; }
+  .o-topbar1__navLink {
+    color: #f8f9fa !important;
+    font-size: 1.2rem;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    transition: all .3s ease; }
+  .o-topbar1__navCta {
+    position: absolute;
+    right: 80px;
+    top: 8px; }
+    @media (min-width: 992px) {
+      .o-topbar1__navCta {
+        position: relative;
+        right: auto;
+        top: 0; } }
+  .o-topbar1__ctaButton {
+    border-radius: 26px;
+    float: right;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 28px;
+    letter-spacing: 0;
+    line-height: 1.5;
+    margin: 2px 0 0 20px;
+    min-width: 110px;
+    padding: 0 7px; }
+    @media screen and (min-width: 480px) {
+      .o-topbar1__ctaButton {
+        font-size: 1.1rem;
+        height: 34px;
+        line-height: 1.8;
+        min-width: 145px; } }
+    @media (min-width: 768px) {
+      .o-topbar1__ctaButton {
+        border-radius: 0px;
+        height: 38px;
+        line-height: 2; } }
+  .o-topbar1__navbarToggler {
+    border: none;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 10px; }
+    @media (min-width: 576px) {
+      .o-topbar1__navbarToggler {
+        top: 12px; } }
+    .o-topbar1__navbarToggler:focus {
+      outline-style: none; }
+
+ /*-----------
+   Login
+----------------*/
+body {
+  font-family: "Rubik", sans-serif; }
+
+.form-control {
+  box-shadow: none;
+  border-color: #ddd; }
+
+.modal-login {
+  color: #434343;
+  width: 350px; }
+
+.modal-login .modal-content {
+  padding: 20px;
+  border-radius: 1px;
+  border: none;
+  position: relative; }
+
+.modal-login .modal-header {
+  border-bottom: none; }
+
+.modal-login h4 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: -10px; }
+
+.modal-login .avatar i {
+  font-size: 62px; }
+
+.modal-login .form-control, .modal-login .btn {
+  min-height: 40px;
+  border-radius: 1px;
+  transition: all 0.5s; }
+
+.modal-login .hint-text {
+  text-align: center;
+  padding-top: 10px; }
+
+.modal-login .close {
+  position: absolute;
+  top: 15px;
+  right: 15px; }
+
+.modal-login .btn {
+  background: #1ea69a;
+  border: none;
+  line-height: normal; }
+
+.modal-login .hint-text a {
+  color: #999; }
+
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto; }
+
+ /*--------------
+   Login Inside End
+----------------*/
+@media (min-width: 992px) {
+  .search-sec {
+    top: -114px;
+    background: rgba(26, 70, 104, 0.51); } }
+@media (max-width: 992px) {
+  .search-sec {
+    background: #1A4668; } }
+.search-sec {
+  width: 83%;
+  background: #ffffff;
+  padding: 30px 30px 35px;
+  margin: -35px 120px 60px; }
+
+.search-slt {
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  height: calc(3rem + 2px) !important;
+  border-radius: 0; }
+
+.wrn-btn {
+  color: #fff;
+  background: #1ea69a;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  height: calc(3rem + 2px) !important;
+  border-radius: 0; }
+
+    /*-----------
+   Navbar 
+----------------*/
+.mysubmit {
+  background: #1ea69a; }
+
+.user-icon {
+  fill: #d8d8d8 !important; }
+
+.active {
+  background-color: #ea723d; }
+
+.mybtn {
+  color: #ffffff; }
+  .mybtn:hover {
+    color: #ffffff !important; }
+
+.mydropdown {
+  border-radius: 0 !important;
+  color: #ffffff; }
+  .mydropdown:hover {
+    color: #ffffff !important;
+    background-color: #ea723d; }
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  color: #ffffff; }
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none; }
+
+  /*-----------
+   Agents 
+----------------*/
+#agents {
+  background-color: #f3e9e9;
+  margin-top: 0px;
+  padding-bottom: 150px; }
+
+.frame {
+  margin: 20px 0px;
+  padding: 5px 10px;
+  background-color: #fff; }
+  .frame p {
+    padding: 5px; }
+
+.img-fluid {
+  border-radius: 50%; }
+
+.paragraph {
+  position: absolute;
+  z-index: 999;
+  margin: -40px 40px 15px 25px;
+  padding: 25px 310px 0px 10px;
+  background: #1ea69a !important; }
+  .paragraph h6 {
+    color: #fff; }
+
+.rightpage {
+  padding-top: 20px;
+  background: #fff; }
+  .rightpage .price {
+    font-size: 2.2rem;
+    color: #1ea69a; }
+  .rightpage p {
+    color: #808080; }
+  .rightpage .for-rent {
+    color: #1a1a1a; }
+  .rightpage span {
+    color: #1a1a1a !important; }
+  .rightpage svg {
+    fill: #b3b3b3; }
+  .rightpage h3 {
+    margin: 0 0 20px;
+    color: #1a1a1a; }
+  .rightpage :hover h3 {
+    color: #1ea69a !important; }
+
+.praph {
+  background-color: #fff;
+  color: #808080;
+  padding: 90px 30px; }
+  .praph p {
+    padding: 5px; }
+  .praph .mybtn {
+    background: #1ea69a !important; }
+
+.mysubmit {
+  color: white;
+  background-color: #ea723d !important; }
+  .mysubmit:hover {
+    color: #fff !important; }
+
+.children a {
+  color: #808080; }
+  .children a :hover .children a {
+    color: #ea723d !important; }
+
+.children li {
+  list-style: none; }
+
+.mysearch {
+  background-color: #1ea69a;
+  color: #fff; }
+  .mysearch:hover {
+    color: #fff !important; }
+
+.myinput {
+  padding-top: 15px; }
+
+.featured {
+  padding: 15px 0px 15px; }
+
+/*----------
+Footer
+-------------*/
+#bottom {
+  padding: 20px 20px 20;
+  background: #303030;
+  color: #808080; }
+
+#bottom i {
+  cursor: pointer; }
+
+/*# sourceMappingURL=homes.css.map */

@@ -1,0 +1,453 @@
+@mixin media-breakpoint-up($breakpoint) {
+    @if $breakpoint == "sm" {
+      @media (min-width: 576px) {
+        @content;
+      }
+    }
+    @if $breakpoint == "md" {
+      @media (min-width: 768px) {
+        @content;
+      }
+    }
+    @if $breakpoint == "lg" {
+      @media (min-width: 992px) {
+        @content;
+      }
+    }
+    @if $breakpoint == "xl" {
+      @media (min-width: 1200px) {
+        @content;
+      }
+    }
+  }
+  @mixin media-breakpoint-down($breakpoint) {
+    @if $breakpoint == "xs" {
+      @media (max-width: 575.98px) {
+        @content;
+      }
+    }
+    @if $breakpoint == "sm" {
+      @media (max-width: 767.98px) {
+        @content;
+      }
+    }
+    @if $breakpoint == "md" {
+      @media (max-width: 991.98px) {
+        @content;
+      }
+    }
+    @if $breakpoint == "lg" {
+      @media (max-width: 1199.98px) {
+        @content;
+      }
+    }
+  }
+  
+  /*
+  Bootstrap Variables
+  */
+  $gray-100: #f8f9fa !default;
+  $gray-200: #e9ecef !default;
+  $gray-300: #dee2e6 !default;
+  $gray-400: #ced4da !default;
+  $gray-500: #adb5bd !default;
+  $gray-600: #6c757d !default;
+  $gray-700: #495057 !default;
+  $gray-800: #343a40 !default;
+  $gray-900: #212529 !default;
+  
+  $blue:    #007bff !default;
+  $indigo:  #6610f2 !default;
+  $purple:  #6f42c1 !default;
+  $pink:    #e83e8c !default;
+  $red:     #dc3545 !default;
+  $orange:  #fd7e14 !default;
+  $yellow:  #ffc107 !default;
+  $green:   #28a745 !default;
+  $teal:    #20c997 !default;
+  $cyan:    #17a2b8 !default;
+  
+  $primary:       $blue !default;
+  $secondary:     $gray-600 !default;
+  $success:       $green !default;
+  $info:          $cyan !default;
+  $warning:       $yellow !default;
+  $danger:        $red !default;
+  $light:         $gray-100 !default;
+  $dark:          $gray-800 !default;
+  
+  $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+  $headings-font-family:        null !default;
+  
+  
+  /*
+  Code
+  */
+  .o-topbar1 {
+    background-image: url(http://modern.realhomes.io/wp-content/uploads/2017/10/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-size: cover;
+    left: 0;
+    padding: 24px 0 220px;
+   
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    .container {
+      position: relative;
+    }
+    @include media-breakpoint-up(md) {
+      position: relative;
+    }
+    &__brand {
+      img {
+        height: 30px;
+        margin-left: 24px;
+        width: auto;
+        @media screen and (min-width: 480px) {
+          height: 45px;
+        }
+        @include media-breakpoint-up(md) {
+          height: auto;
+          margin-left: 0;
+        }
+      }
+    }
+    &__nav {
+      font-size: 1rem;
+    }
+    &__navLink {
+      color:#f8f9fa !important;
+      font-size: 1.2rem;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      transition: all .3s ease;
+    }
+    &__navCta {
+      position: absolute;
+      right: 80px;
+      top: 8px;
+      @include media-breakpoint-up(lg) {
+        position: relative;
+        right: auto;
+        top: 0;
+      }
+    }
+    &__ctaButton {
+      border-radius: 26px;
+      float: right;
+      font-size: 1rem;
+      font-weight: bold;
+      height: 28px;
+      letter-spacing: 0;
+      line-height: 1.5;
+      margin: 2px 0 0 20px;
+      min-width: 110px;
+      padding: 0 7px;
+      @media screen and (min-width: 480px) {
+        font-size: 1.1rem;
+        height: 34px;
+        line-height: 1.8;
+        min-width: 145px;
+      }
+      @include media-breakpoint-up(md) {
+        border-radius: 0px;
+        height: 38px;
+        line-height: 2;
+      }
+    }
+    &__navbarToggler {
+      border: none;
+      margin-right: 10px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      @include media-breakpoint-up(sm) {
+        top: 12px;
+      }
+      &:focus {
+        outline-style: none;
+      }
+    }
+  }
+  
+
+ /*-----------
+   Login
+----------------*/ 
+  
+  body {
+  font-family: "Rubik", sans-serif;
+}
+  .form-control {
+      box-shadow: none;
+      border-color: #ddd;
+  }
+
+
+.modal-login {
+      color: #434343;
+  width: 350px;
+}
+.modal-login .modal-content {
+  padding: 20px;
+  border-radius: 1px;
+  border: none;
+      position: relative;
+}
+.modal-login .modal-header {
+  border-bottom: none;
+}
+.modal-login h4 {
+  text-align: center;
+  font-size: 22px;
+      margin-bottom: -10px;
+}
+ 
+  .modal-login .avatar i {
+      font-size: 62px;
+  }
+.modal-login .form-control, .modal-login .btn {
+  min-height: 40px;
+  border-radius: 1px; 
+      transition: all 0.5s;
+}    
+.modal-login .hint-text {
+  text-align: center;
+  padding-top: 10px;
+}
+.modal-login .close {
+      position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.modal-login .btn {
+  background: #1ea69a;
+  border: none;
+  line-height: normal;
+}
+
+.modal-login .hint-text a {
+  color: #999;
+}
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
+
+ /*--------------
+   Login Inside End
+----------------*/ 
+
+
+@media (min-width: 992px){
+  .search-sec{
+     
+      top: -114px;
+      background: rgba(26, 70, 104, 0.51);
+  }
+}
+
+@media (max-width: 992px){
+  .search-sec{
+      background: #1A4668;
+  }
+}
+.search-sec{
+  width: 83%;
+  background: #ffffff;
+  padding: 30px 30px 35px;
+  margin: -35px 120px 60px;
+  
+}
+.search-slt{
+ 
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  height: calc(3rem + 2px) !important;
+  border-radius:0;
+}
+.wrn-btn{
+  color: #fff;
+  background: #1ea69a;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+   height: calc(3rem + 2px) !important;
+   border-radius:0;
+}
+
+
+
+
+    /*-----------
+   Navbar 
+----------------*/  
+.mysubmit{
+  background: #1ea69a;
+}
+.user-icon{
+  fill: #d8d8d8 !important;
+}
+.active{
+  background-color: #ea723d;
+}
+
+.mybtn{
+  color: #ffffff;
+  &:hover {
+    color: #ffffff !important;
+}
+}
+.mydropdown{
+  border-radius: 0 !important;
+  color:#ffffff;
+    &:hover {
+      color: #ffffff !important;
+      background-color: #ea723d;
+    
+  }
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+ color: #ffffff;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+    
+    }
+   
+  
+  /*-----------
+   Agents 
+----------------*/
+#agents{
+  background-color:  rgb(243, 233, 233);
+  margin-top:0px;
+  padding-bottom:150px ;
+}
+.frame{
+  margin: 20px 0px;
+  padding: 5px 10px;
+  background-color: #fff;
+  p{
+    padding: 5px;
+  }
+}
+
+
+
+
+.img-fluid{
+  border-radius: 50%;
+}
+.paragraph{
+  position: absolute;
+  z-index: 999;
+  margin: -40px 40px 15px 25px;
+  padding: 25px 310px 0px 10px;
+  background: #1ea69a !important;
+  h6{
+    color:#fff;
+  }
+ 
+} 
+
+.rightpage{
+  padding-top: 20px;
+  background: #fff;
+  .price{
+    font-size: 2.2rem;
+    color: #1ea69a;
+  }
+  p{
+    color: #808080;
+  }
+  .for-rent{
+    color:#1a1a1a ;
+  }
+  span{
+    color:#1a1a1a !important;
+  }
+  svg{
+    fill:#b3b3b3;
+  }
+  h3{
+    margin:0 0 20px;
+    color:#1a1a1a;
+  }
+    & :hover h3{
+      color: #1ea69a !important;
+    }
+  }
+
+
+
+.praph{
+  background-color: #fff;
+  color: #808080;
+  padding: 90px 30px;
+  p{
+    padding: 5px;
+  }
+ 
+  .mybtn{
+    background: #1ea69a !important;
+  }
+}
+.mysubmit{
+  color: white;
+  background-color:  #ea723d !important;
+  &:hover{
+    color: #fff !important;
+  }
+}
+
+.children a{
+  color: #808080;
+  
+  & :hover .children a{
+    color: #ea723d !important;
+  }
+}
+.children li{
+  list-style: none;
+}
+.mysearch{
+ 
+  background-color: #1ea69a;
+  color: #fff;
+  &:hover{
+    color: #fff !important;
+  }
+}
+.myinput{
+  padding-top: 15px;
+}
+.featured{
+  padding: 15px 0px 15px;
+}
+/*----------
+Footer
+-------------*/
+#bottom{
+  padding: 20px 20px 20;
+  background: #303030;
+  color: #808080;
+
+
+}
+#bottom i{
+  cursor: pointer;
+ 
+}
+ 
